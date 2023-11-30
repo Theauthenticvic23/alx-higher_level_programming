@@ -4,11 +4,12 @@ def add_arg(argv):
     if n == 0:
         print("{:d}".format(n))
         return
-    i = 1
-    add = 0
-    while i <= n:
-        add += int(argv[i])
-        i += 1
+    else:
+        i = 1
+        add = 0
+        while i <= n:
+            add += int(argv[i])
+            i += 1
         print("{:d}".format(add))
 
 
