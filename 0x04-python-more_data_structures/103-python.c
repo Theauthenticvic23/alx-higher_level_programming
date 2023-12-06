@@ -3,9 +3,8 @@
 #include <listobject.h>
 #include <bytesobject.h>
 /**
- * print_python_bytes - description of print
+ * print_python_bytes - prints bytes
  * @p: A PyObject list
- * Return: nothing
  */
 
 void print_python_bytes(PyObject *p)
@@ -15,7 +14,6 @@ void print_python_bytes(PyObject *p)
 	char *trying_str = NULL;
 
 	printf("[.] bytes object info\n");
-
 
 	if (!PyBytes_Check(p))
 	{
@@ -34,9 +32,8 @@ void print_python_bytes(PyObject *p)
 	printf("\n");
 }
 /**
- * print_python_list - description
+ * print_python_list - prints list
  * @p: A PyObject list
- * Return: nothing
  */
 
 void print_python_list(PyObject *p)
