@@ -2,12 +2,21 @@
 #include <object.h>
 #include <listobject.h>
 #include <bytesobject.h>
+/**
+ * print_python_bytes - description of print
+ * @p: A PyObject list
+ * Return: nothing
+ */
+
 void print_python_bytes(PyObject *p)
 {
 	long int size;
 	int i;
 	char *trying_str = NULL;
+
 	printf("[.] bytes object info\n");
+
+
 	if (!PyBytes_Check(p))
 	{
 		printf("  [ERROR] Invalid Bytes Object\n");
@@ -24,12 +33,19 @@ void print_python_bytes(PyObject *p)
 		printf(" %02hhx", trying_str[i]);
 	printf("\n");
 }
+/**
+ * print_python_list - description
+ * @p: A PyObject list
+ * Return: nothing
+ */
+
 void print_python_list(PyObject *p)
 {
 	long int size = PyList_Size(p);
 	int i;
 	PyListObject *list = (PyListObject *)p;
 	const char *type;
+
 	printf("[*] Python list info\n");
 	printf("[*] Size of the Python List = %li\n", size);
 	printf("[*] Allocated = %li\n", list->allocated);
