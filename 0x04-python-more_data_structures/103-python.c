@@ -2,9 +2,11 @@
 #include <object.h>
 #include <listobject.h>
 #include <bytesobject.h>
+
 /**
  * print_python_bytes - prints bytes
- * @p: A PyObject list
+ * @p: python
+ * Return: nothing
  */
 
 void print_python_bytes(PyObject *p)
@@ -33,7 +35,8 @@ void print_python_bytes(PyObject *p)
 }
 /**
  * print_python_list - prints list
- * @p: A PyObject list
+ * @p: python
+ * Return: nothing
  */
 
 void print_python_list(PyObject *p)
@@ -41,6 +44,7 @@ void print_python_list(PyObject *p)
 	long int size = PyList_Size(p);
 	int i;
 	PyListObject *list = (PyListObject *)p;
+
 	const char *type;
 
 	printf("[*] Python list info\n");
