@@ -4,6 +4,7 @@
 
 import math
 
+
 class MagicClass:
     """Represent a circle."""
 
@@ -24,4 +25,4 @@ class MagicClass:
 
     def circumference(self):
         """Return The circumference of the MagicClass."""
-        return (2 * mathpu * self.__radius)
+        return (2 * mathpi * self.__radius)
